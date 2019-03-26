@@ -17,7 +17,7 @@ for tweet in tweets:
   print(tweet.text)
   
   analysis  = TextBlob(tweet.text)
-  a = analysis.sentiment
+  a = analysis.sentiment.polarity
   if(a>0):
     print("Positive")
   elif(a == 0):
